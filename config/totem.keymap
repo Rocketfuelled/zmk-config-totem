@@ -36,6 +36,111 @@
 
     combos {
         compatible = "zmk,combos";
+
+        /* Left Hand Horizontal Combos */
+        combo_ds_save {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&kp LC(S)>;
+        };
+
+        combo_dfg_cut {
+            timeout-ms = <50>;
+            key-positions = <12 13 14>;
+            bindings = <&kp LC(LS(F))>;
+        };
+
+        combo_zx_copy {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp LC(Z)>;
+        };
+
+        combo_xc_copy {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp LC(X)>;
+        };
+
+        combo_cv_undo {
+            timeout-ms = <50>;
+            key-positions = <23 24>;
+            bindings = <&kp LC(C)>;
+        };
+
+        combo_vb_undo {
+            timeout-ms = <50>;
+            key-positions = <24 25>;
+            bindings = <&kp LC(V)>;
+        };
+
+        /* Right Hand Horizontal Combos */
+        combo_ui_bksp {
+            timeout-ms = <50>;
+            key-positions = <6 7>;
+            bindings = <&kp BSPC>;
+        };
+
+        combo_io_del {
+            timeout-ms = <50>;
+            key-positions = <7 8>;
+            bindings = <&kp DEL>;
+        };
+
+        combo_jk_lparen {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&kp LPAR>;
+        };
+
+        combo_kl_rparen {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&kp RPAR>;
+        };
+
+        combo_mcom_lbrack {
+            timeout-ms = <50>;
+            key-positions = <27 28>;
+            bindings = <&kp LBRC>;
+        };
+
+        combo_comdot_rbrack {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp RBRC>;
+        };
+
+        /* Right Hand Vertical Combos */
+        combo_jm_dash {
+            timeout-ms = <50>;
+            key-positions = <16 27>;
+            bindings = <&kp MINUS>;
+        };
+
+        combo_hn_unds {
+            timeout-ms = <50>;
+            key-positions = <15 26>;
+            bindings = <&kp UNDER>;
+        };
+
+        combo_kcom_semi {
+            timeout-ms = <50>;
+            key-positions = <17 28>;
+            bindings = <&kp SEMI>;
+        };
+
+        combo_ldot_coln {
+            timeout-ms = <50>;
+            key-positions = <18 29>;
+            bindings = <&kp COLON>;
+        };
+
+        combo_slash_ques {
+            timeout-ms = <50>;
+            key-positions = <19 30>;
+            bindings = <&kp QUESTION>;
+        };
     };
 
     keymap {
